@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>Mesto</title>
+  </head>
+  <body class="root">
+    <div class="page">
+      <header class="header">
+        <img src="images/logo.svg" class="header__logo" alt="лого проекта" />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <div class="profile__image">
+            <img
+              src="images/polina-kondrashova-fhrWAh2HMnM-unsplash.jpg"
+              class="profile__avatar"
+              alt="фигура головы"
+            />
+          </div>
+          <div class="profile__information">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button" type="button"
+            aria-label="Закрыть"></button>
+            <p class="profile__description">Исследователь океана</p>
+          </div>
+          <button class="profile__add-button" type="button"></button>
+        </section>
+        <section class="element">
+          <div class="element__description">
+            <img
+              src="images/geraltyichen-AfjIGVWHp7Q-unsplash.jpg"
+              class="element__image"
+              alt="Каллиграфиа"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Каллиграфиа</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/geraltyichen-TMqAlppR_Qk-unsplash.jpg"
+              class="element__image"
+              alt="Искусство"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Искусство</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/krisjanis-kazaks-TCRzpVCUuaI-unsplash.jpg"
+              class="element__image"
+              alt="Улица в снегу"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Улица в снегу</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-_CdxNfcQ-mM-unsplash.jpg"
+              class="element__image"
+              alt="Ретро машина"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Ретро машина</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-dTd4Kw_dQfo-unsplash.jpg"
+              class="element__image"
+              alt="Газета"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Газета</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/mary-skrynnikova-H_8zn9NVoWw-unsplash.jpg"
+              class="element__image"
+              alt="Книги"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Книги</h2>
+              <img src="images/Group.svg" class="element__like" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2021. Olesea Cotorobai</p>
+      </footer>
+      <section class="overlay">
+        <div class="popup popup_opened">
+          <button
+            class="popup__close-button"
+            aria-label="Закрыть"
+            type="button"
+          ></button>
+          <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
+          <form class="popup__form" action="#">
+            <div>
+              <input
+              class=" popup__text  popup__name"
+                type="text"
+                placeholder="Имя"
+                name="name"
+                value="Жак-Ив Кусто"
+                required
+                id='name-input'
+              />
+            </div>
+
+            <div>
+              <input
+              class=" popup__text popup__description"
+                type="text"
+                placeholder="Описание"
+                name="description"
+                value="Исследователь океана"
+                required
+                id='job-input'
+              />
+            </div>
+            <button
+            type="submit"
+            class="popup__submit-button"
+            aria-label="Сохранить"
+            type="button"
+          >Сохранить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

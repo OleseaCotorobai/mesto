@@ -1,0 +1,20 @@
+.profile__edit-button {
+    background: url(../../../images/Edit\ Button.svg);
+    width: 24px;
+height: 24px;
+border: 1px solid #fff;
+margin: 0;
+margin-left:18px;
+align-self: flex-end;
+transition: opacity .2s ease-in;
+}
+.popup__edit-button:hover {
+opacity: 0.8;
+}
+
+@media screen and ( max-width: 600px) {
+    .profile__edit-button {
+        align-self: flex-start;
+        margin-top: 5px;
+    }
+}
