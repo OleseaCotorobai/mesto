@@ -6,9 +6,9 @@
   margin-left: 244px;
   background-position: 50%;
   background-repeat: no-repeat;
-  transition: opacity .2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
-.popup__add-button:hover {
+.profile__add-button:hover {
 opacity: 0.8;
 }
 

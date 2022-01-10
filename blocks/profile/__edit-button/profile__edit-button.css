@@ -8,7 +8,7 @@ margin-left:18px;
 align-self: flex-end;
 transition: opacity .2s ease-in;
 }
-.popup__edit-button:hover {
+.profile__edit-button:hover {
 opacity: 0.8;
 }
 
