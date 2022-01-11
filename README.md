@@ -9,6 +9,8 @@
 
 **Ссылка на проект** 
 
+* [Ссылка на проект](https://oleseacotorobai.github.io/mesto/)
+
 **Технологии:**
 
 HTML CSS JAVASCRIPT
