@@ -1,12 +1,11 @@
 .header {
-width: 880px;
-height: 74px;
-border-bottom: 1px solid #545454;
-align-self: center;
+  width: 880px;
+  height: 74px;
+  border-bottom: 1px solid #545454;
+  align-self: center;
 }
-@media screen and ( max-width: 900px) {
-    .header {
-        width: 100%;
-    }
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+  }
 }
-    

@@ -9,16 +9,15 @@
   right: -40px;
   background-color: transparent;
   cursor: pointer;
-  transition:  0.2s ease-in-out transform;
+  transition: 0.2s ease-in-out transform;
 }
 
 .popup__close-button:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 @media screen and (max-width: 550px) {
   .popup__close-button {
     top: -45px;
     right: 0px;
-}
   }
-
+}

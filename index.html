@@ -22,8 +22,11 @@
           </div>
           <div class="profile__information">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button" type="button"
-            aria-label="Закрыть"></button>
+            <button
+              class="profile__edit-button"
+              type="button"
+              aria-label="Закрыть"
+            ></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
           <button class="profile__add-button" type="button"></button>
@@ -37,7 +40,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Каллиграфиа</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
           <div class="element__description">
@@ -48,7 +51,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Искусство</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
           <div class="element__description">
@@ -59,7 +62,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Улица в снегу</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
           <div class="element__description">
@@ -70,7 +73,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Ретро машина</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
           <div class="element__description">
@@ -81,7 +84,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Газета</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
           <div class="element__description">
@@ -92,7 +95,7 @@
             />
             <div class="element__group">
               <h2 class="element__title">Книги</h2>
-              <img src="images/Group.svg" class="element__like" />
+              <img src="images/Group.svg" class="element__like" alt="лайк" />
             </div>
           </div>
         </section>
@@ -111,32 +114,34 @@
           <form class="popup__form" action="#">
             <div>
               <input
-              class=" popup__text  popup__name"
+                class="popup__text popup__name"
                 type="text"
                 placeholder="Имя"
                 name="name"
                 value="Жак-Ив Кусто"
                 required
-                id='name-input'
+                id="name-input"
               />
             </div>
 
             <div>
               <input
-              class=" popup__text popup__description"
+                class="popup__text popup__description"
                 type="text"
                 placeholder="Описание"
                 name="description"
                 value="Исследователь океана"
                 required
-                id='job-input'
+                id="job-input"
               />
             </div>
             <button
-            type="submit"
-            class="popup__submit-button"
-            aria-label ="Сохранить"
-          >Сохранить</button>
+              type="submit"
+              class="popup__submit-button"
+              aria-label="Сохранить"
+            >
+              Сохранить
+            </button>
           </form>
         </div>
       </section>

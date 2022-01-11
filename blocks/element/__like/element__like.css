@@ -1,10 +1,10 @@
 .element__like {
-    margin-right: 30px;
-    margin-top: 30px;
-    height: 19px;
-    transition:  0.2s ease-in-out transform;
+  margin-right: 30px;
+  margin-top: 30px;
+  height: 19px;
+  transition: 0.2s ease-in-out transform;
 }
 
 .element__like:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
