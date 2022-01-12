@@ -7,9 +7,9 @@ const popupProfile = document.querySelector(".popup");
 const profileSubmitButton = document.querySelector(".popup__submit-button");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
-let formNameInput = formElement.querySelector(".popup_form_name");
+let formNameInput = formElement.querySelector(".popup__text-name");
 let formDescriptionInput = formElement.querySelector(
-  ".popup_form_description"
+  ".popup__text-description"
 );
 
 buttonProfileEdit.addEventListener("click", function (event) {
