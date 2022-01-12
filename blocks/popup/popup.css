@@ -1,6 +1,5 @@
 .popup {
   max-width: 430px;
-  min-height: 330px;
   background: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -11,6 +10,6 @@
 @media screen and (max-width: 550px) {
   .popup {
     max-width: 282px;
-    min-height: 322px;
+    height: 322px;
   }
 }

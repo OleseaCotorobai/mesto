@@ -1,45 +1,31 @@
 let buttonProfileEdit = document.querySelector(".profile__edit-button");
 let buttonClose = document.querySelector(".popup__close-button");
 let overlay = document.querySelector(".overlay");
-let overlayActiveClass = "overlay__active";
+let overlayActiveClass = "overlay_active";
 const formElement = document.querySelector(".popup__form");
 const popupProfile = document.querySelector(".popup");
 const profileSubmitButton = document.querySelector(".popup__submit-button");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
-let formNameInput = formElement.querySelector(".popup__name");
-let formDescriptionInput = formElement.querySelector(".popup__description");
+let formNameInput = formElement.querySelector(".popup-form_name-container");
+let formDescriptionInput = formElement.querySelector(
+  ".popup-form_description-container"
+);
 
 buttonProfileEdit.addEventListener("click", function (event) {
-    
-    overlay.classList.add(overlayActiveClass);
-  });
-  buttonClose.addEventListener("click", function () {
-    overlay.classList.remove(overlayActiveClass);
-  });
-buttonProfileEdit.addEventListener("click", () => {
-  openPopup(popupProfile);
+  formNameInput.value = profileName.textContent;
+  formDescriptionInput.value = profileDescription.textContent;
+  overlay.classList.add(overlayActiveClass);
 });
-function openPopup(popup) {
-  popup.classList.add("popup_opened");
-}
-function closePopup(popup) {
-  popup.classList.remove("popup_opened");
-}
+buttonClose.addEventListener("click", function () {
+  overlay.classList.remove(overlayActiveClass);
+});
+
 function formSubmitHandler(evt) {
   evt.preventDefault();
-  
-profileName.textContent =  formNameInput.value;
- profileDescription.textContent = formDescriptionInput.value;
-  closePopup(popupProfile);
+  profileName.textContent = formNameInput.value;
+  profileDescription.textContent = formDescriptionInput.value;
+  closePopup();
 }
-buttonClose.addEventListener("click", () => {
-  closePopup(popupProfile);
-});
 
-  
 formElement.addEventListener("submit", formSubmitHandler);
-
-profileSubmitButton.addEventListener("click", () => {
-    closePopup(popupProfile);
-  });

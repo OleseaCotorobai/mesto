@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pages/index.css" />
-    <title>Mesto</title>
+    <title>Место</title>
   </head>
   <body class="root">
     <div class="page">
@@ -40,7 +40,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Каллиграфиа</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
           <div class="element__description">
@@ -51,7 +56,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Искусство</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
           <div class="element__description">
@@ -62,7 +72,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Улица в снегу</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
           <div class="element__description">
@@ -73,7 +88,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Ретро машина</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
           <div class="element__description">
@@ -84,7 +104,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Газета</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
           <div class="element__description">
@@ -95,7 +120,12 @@
             />
             <div class="element__group">
               <h2 class="element__title">Книги</h2>
-              <img src="images/Group.svg" class="element__like" alt="лайк" />
+              <img
+                src="images/Group.svg"
+                class="element__like"
+                alt="лайк"
+                type="button"
+              />
             </div>
           </div>
         </section>
@@ -111,30 +141,27 @@
             type="button"
           ></button>
           <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
-          <form class="popup__form" action="#">
-            <div>
-              <input
-                class="popup__text popup__name"
-                type="text"
-                placeholder="Имя"
-                name="name"
-                value="Жак-Ив Кусто"
-                required
-                id="name-input"
-              />
-            </div>
+          <form class="popup__form" action="#" name="popup-form">
+            <input
+              class="popup__text popup-form_name-container"
+              type="text"
+              placeholder="Имя"
+              name="name"
+              value="Жак-Ив Кусто"
+              required
+              id="name-input"
+            />
 
-            <div>
-              <input
-                class="popup__text popup__description"
-                type="text"
-                placeholder="Описание"
-                name="description"
-                value="Исследователь океана"
-                required
-                id="job-input"
-              />
-            </div>
+            <input
+              class="popup__text popup-form_description-container"
+              type="text"
+              placeholder="Описание"
+              name="description"
+              value="Исследователь океана"
+              required
+              id="job-input"
+            />
+
             <button
               type="submit"
               class="popup__submit-button"
