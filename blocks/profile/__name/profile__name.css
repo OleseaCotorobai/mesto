@@ -16,6 +16,7 @@
   .profile__name {
     margin-left: 65px;
     font-size: 27px;
+    margin-bottom: 14px;
     line-height: 33px;
   }
 }

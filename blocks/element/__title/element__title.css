@@ -1,6 +1,7 @@
 .element__title {
   margin: 0;
   margin-left: 21px;
+  max-width: 246px;
   margin-top: 25px;
   margin-bottom: 31px;
   font-style: normal;
