@@ -24,7 +24,9 @@ function formSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = formNameInput.value;
   profileDescription.textContent = formDescriptionInput.value;
-  closePopup();
-}
 
+}
+profileSubmitButton.addEventListener("click", function () {
+  overlay.classList.remove(overlayActiveClass);
+});
 formElement.addEventListener("submit", formSubmitHandler);
