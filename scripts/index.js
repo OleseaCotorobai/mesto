@@ -4,7 +4,6 @@ let overlay = document.querySelector(".overlay");
 let overlayActiveClass = "overlay_active";
 const formElement = document.querySelector(".popup__form");
 const popupProfile = document.querySelector(".popup");
-const profileSubmitButton = document.querySelector(".popup__submit-button");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 let formNameInput = formElement.querySelector("#name-input");
@@ -24,9 +23,7 @@ function formSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = formNameInput.value;
   profileDescription.textContent = formDescriptionInput.value;
-
-}
-profileSubmitButton.addEventListener("click", function () {
   overlay.classList.remove(overlayActiveClass);
-});
+}
+
 formElement.addEventListener("submit", formSubmitHandler);
