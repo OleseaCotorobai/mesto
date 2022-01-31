@@ -1,0 +1,161 @@
+<div class="element__description">
+            <img
+              src="images/geraltyichen-AfjIGVWHp7Q-unsplash.jpg"
+              class="element__image"
+              alt="Каллиграфиа"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Каллиграфиа</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/geraltyichen-TMqAlppR_Qk-unsplash.jpg"
+              class="element__image"
+              alt="Искусство"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Искусство</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/krisjanis-kazaks-TCRzpVCUuaI-unsplash.jpg"
+              class="element__image"
+              alt="Улица в снегу"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Улица в снегу</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-_CdxNfcQ-mM-unsplash.jpg"
+              class="element__image"
+              alt="Ретро машина"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Ретро машина</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-dTd4Kw_dQfo-unsplash.jpg"
+              class="element__image"
+              alt="Газета"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Газета</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description element__container">
+            <img
+              src="images/mary-skrynnikova-H_8zn9NVoWw-unsplash.jpg"
+              class="element__image"
+              alt="Книги"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Книги</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+
+
+
+
+          function initialCardsTemplate(nameValue, linkValue) {
+  const elementTemplate = document.querySelector('#element-template').content;
+  const elementForm = elementTemplate.querySelector('.element__description').cloneNode(true);
+
+  elementForm.querySelector('.element__image').textContent = linkValue;
+  elementForm.querySelector('.element__group').textContent = nameValue;
+}
+
+<!---<div class="element__description">
+            <img
+              src="images/geraltyichen-AfjIGVWHp7Q-unsplash.jpg"
+              class="element__image"
+              alt="Каллиграфиа"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Каллиграфиа</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/geraltyichen-TMqAlppR_Qk-unsplash.jpg"
+              class="element__image"
+              alt="Искусство"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Искусство</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/krisjanis-kazaks-TCRzpVCUuaI-unsplash.jpg"
+              class="element__image"
+              alt="Улица в снегу"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Улица в снегу</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-_CdxNfcQ-mM-unsplash.jpg"
+              class="element__image"
+              alt="Ретро машина"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Ретро машина</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/markus-spiske-dTd4Kw_dQfo-unsplash.jpg"
+              class="element__image"
+              alt="Газета"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Газета</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element__description">
+            <img
+              src="images/mary-skrynnikova-H_8zn9NVoWw-unsplash.jpg"
+              class="element__image"
+              alt="Книги"
+            />
+            <div class="element__group">
+              <h2 class="element__title">Книги</h2>
+              <button class="element__like" type="button"></button>
+            </div>
+          </div>-->
+
+
+
+          deleteButton.addEventListener('.click', (evt) => {
+            evt.target.closest('element__description').remove()
+          });
+
+          const cardElement = document.querySelector('.element__description');
+ const deleteButton = document.querySelector('.element__delete');
+ 
+
+
+const deleteButtonActive = (e) => {
+  e.target.closest('#element-template').remove();
+};
+
+deleteButton.addEventListener('click', deleteButtonActive);

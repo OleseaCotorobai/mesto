@@ -29,82 +29,19 @@
             ></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
-          <button class="profile__add-button" type="button"></button>
+          <button
+            class="profile__add-button"
+            type="button"
+            aria-label="Добавить"
+          ></button>
         </section>
-        <section class="element">
-          <div class="element__description">
-            <img
-              src="images/geraltyichen-AfjIGVWHp7Q-unsplash.jpg"
-              class="element__image"
-              alt="Каллиграфиа"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Каллиграфиа</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-          <div class="element__description">
-            <img
-              src="images/geraltyichen-TMqAlppR_Qk-unsplash.jpg"
-              class="element__image"
-              alt="Искусство"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Искусство</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-          <div class="element__description">
-            <img
-              src="images/krisjanis-kazaks-TCRzpVCUuaI-unsplash.jpg"
-              class="element__image"
-              alt="Улица в снегу"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Улица в снегу</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-          <div class="element__description">
-            <img
-              src="images/markus-spiske-_CdxNfcQ-mM-unsplash.jpg"
-              class="element__image"
-              alt="Ретро машина"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Ретро машина</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-          <div class="element__description">
-            <img
-              src="images/markus-spiske-dTd4Kw_dQfo-unsplash.jpg"
-              class="element__image"
-              alt="Газета"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Газета</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-          <div class="element__description">
-            <img
-              src="images/mary-skrynnikova-H_8zn9NVoWw-unsplash.jpg"
-              class="element__image"
-              alt="Книги"
-            />
-            <div class="element__group">
-              <h2 class="element__title">Книги</h2>
-              <button class="element__like" type="button"></button>
-            </div>
-          </div>
-        </section>
+        <section class="element"></section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&copy; 2021. Olesea Cotorobai</p>
       </footer>
       <section class="overlay">
-        <div class="popup popup_opened">
+        <div class="popup popup__edit popup__opened">
           <button
             class="popup__close-button"
             aria-label="Закрыть"
@@ -142,7 +79,55 @@
           </form>
         </div>
       </section>
+      <section class="overlay" id="add-button">
+        <div class="popup popup_opened">
+          <button
+            class="popup__close-button"
+            aria-label="Закрыть"
+            type="button"
+            id="close-button"
+          ></button>
+          <h3 class="popup__title">Новое место</h3>
+          <form class="popup__form" action="#" name="popup-form">
+            <input
+              class="popup__text"
+              type="text"
+              placeholder="Название"
+              name="name"
+              required
+              id="title-input"
+            />
+
+            <input
+              class="popup__text"
+              type="text"
+              placeholder="Ссылка на картинку"
+              name="description"
+              required
+              id="link-input"
+            />
+
+            <button
+              type="submit"
+              class="popup__submit-button"
+              aria-label="Сохранить"
+            >
+              Создать
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
+    <template id="element-template">
+      <div class="element__description">
+        <button class="element__delete" type="button"></button>
+        <img src="#" class="element__image" alt="Газета" />
+        <div class="element__group">
+          <h2 class="element__title"></h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+    </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
