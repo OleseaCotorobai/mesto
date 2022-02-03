@@ -9,7 +9,7 @@ const profileDescription = document.querySelector(".profile__description");
 let formNameInput = formElement.querySelector("#name-input");
 let formDescriptionInput = formElement.querySelector("#job-input");
 
-const popupAdd = document.querySelector(".popup_place");
+const popupAdd = document.querySelector(".overlay_type_place");
 let buttonCardEdit = document.querySelector(".profile__add-button");
 let formTitleInput = popupAdd.querySelector("#title-input");
 let formLinkInput = popupAdd.querySelector("#link-input");
