@@ -1,4 +1,4 @@
-.card_close_button {
+.card__button {
     background-image: url(../../../images/Close\ Icon.svg);
     position: absolute;
     width: 32px;
@@ -12,7 +12,7 @@
     transition: 0.2s ease-in-out transform;
   }
   
-  .card_close_button :hover {
+  .card__button :hover {
     opacity: 0.6;
   }
   @media screen and (max-width: 550px) {
