@@ -1,3 +1,4 @@
 .overlay_active {
   display: flex;
+  transition: visibility .3s ease,opacity .3s linear;
 }
