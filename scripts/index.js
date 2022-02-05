@@ -95,7 +95,7 @@ function createCard(name, link) {
     .querySelector(".element__image")
     .addEventListener("click", openFoto);
 
-  return cardsElement;
+  return(cardsElement);
 }
 
 function addCard(newCard) {
@@ -114,7 +114,7 @@ function handleCardFormSubmit(evt) {
   const link = formLinkInput.value;
   addCard(name, link);
 
-  openAddPopup(popupAdd);
+  closeAddPopup(popupAdd);
 
   elementImage.addEventListener("click", openFoto);
 }
@@ -132,7 +132,7 @@ const cardCloseButton = document.querySelector("#card-close");
 function openFoto() {
   cardPicture.classList.add("card_open");
   popupCardImage.src = this.src;
-  popupCardTitle.alt = this.alt;
+  popupCardTitle.textContent = this.alt;
 }
 cardCloseButton.addEventListener("click", function () {
   cardPicture.classList.remove("card_open");
