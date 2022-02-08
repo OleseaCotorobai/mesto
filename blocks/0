@@ -358,3 +358,7 @@ function openFoto(name, link) {
   cardFoto.src = link;
   cardPicture.classList.add(cardOpen);
   };
+
+
+
+ 

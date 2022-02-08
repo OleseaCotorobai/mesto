@@ -40,15 +40,15 @@
       <footer class="footer">
         <p class="footer__copyright">&copy; 2021. Olesea Cotorobai</p>
       </footer>
-      <section class="modal">
-        <div class="popup popup_edit popup_opened">
+      <section class="popup popup_profile">
+        <div class="popup__content">
           <button
-            class="popup__close-button"
+            class="popup__close-button popup__close-edit-button"
             aria-label="Закрыть"
             type="button"
           ></button>
           <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
-          <form class="popup__form" action="#" name="popup-form">
+          <form class="popup__form popup__form-edit-profile" action="#" name="popup-form">
             <input
               class="popup__text"
               type="text"
@@ -79,16 +79,16 @@
           </form>
         </div>
       </section>
-      <section class="modal modal_type_place" id="add-button">
-        <div class="popup popup_opened">
+      <section class="popup popup_card" id="add-button">
+        <div class="popup__content">
           <button
-            class="popup__close-button"
+            class="popup__close-button popup__close-add-button"
             aria-label="Закрыть"
             type="button"
             id="close-button"
           ></button>
           <h3 class="popup__title">Новое место</h3>
-          <form class="popup__form" action="#" name="popup-form">
+          <form class="popup__form popup__form-add-card" action="#" name="popup-form">
             <input
               class="popup__text"
               type="text"
@@ -119,7 +119,7 @@
       </section>
       <div class="card">
         <div class="card__content">
-          <img class="card__foto" src="#" alt="Фото места">
+          <img class="card__foto" src="#" alt=" ">
           <p class="card__caption"></p>
           <button class="card__button" aria-label="Закрыть" type="button" id="card-close"></button>
         </div>
