@@ -4,12 +4,11 @@ const buttonCloseEditProfile = document.querySelector(
 );
 const popupActiveClass = "popup_opened";
 const formProfileEdit = document.querySelector(".popup__form-edit-profile");
-const popupContent = document.querySelector(".popup__content");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 const formNameInput = formProfileEdit.querySelector("#name-input");
 const formDescriptionInput = formProfileEdit.querySelector("#job-input");
-const formElement = document.querySelector("#popup-form");
+const popupAddCard = document.querySelector(".popup__form-add-card");
 const popup = document.querySelector(".popup");
 const popupAdd = document.querySelector(".popup_card");
 const buttonCardEdit = document.querySelector(".profile__add-button");
@@ -24,6 +23,12 @@ const initialCardsElement = document.querySelector(".element");
 const cardsElement = elementTemplate.cloneNode(true);
 cardsElement.querySelector(".element__title").textContent;
 cardsElement.querySelector(".element__image").href;
+const cardFoto = document.querySelector(".card");
+const cardOpen = "card_open";
+const popupCardImage = document.querySelector(".card__foto");
+const popupCardTitle = document.querySelector(".card__caption");
+const cardCloseButton = document.querySelector("#card-close");
+
 
 ////функция открытия
 function openPopup(popup) {
@@ -69,8 +74,8 @@ function createCard(name, link) {
   cardsElement.querySelector(".element__title").textContent = name;
   const cardImage = cardsElement.querySelector(".element__image");
   cardImage.src = link;
-  cardsElement.querySelector(".element__image").alt = name;
- 
+  cardImage.alt = name;
+ popupAddCard.reset();
 
   // like/dislike card
 
@@ -89,7 +94,7 @@ function createCard(name, link) {
 
   cardImage
     .addEventListener("click", openFoto);
-    cardsElement.querySelector(".element__image").addEventListener("click", () => openFoto(name, link)); 
+    cardImage.addEventListener("click", () => openFoto(name, link)); 
     
   return cardsElement;
   
@@ -124,18 +129,13 @@ function handleCardFormSubmit(evt) {
 popupAdd.addEventListener("submit", handleCardFormSubmit);
 
 ///openFoto//
-const cardFoto = document.querySelector(".card");
-const cardOpen = "card_open";
-const popupCardImage = document.querySelector(".card__foto");
-const popupCardTitle = document.querySelector(".card__caption");
-
-const cardCloseButton = document.querySelector("#card-close");
 
 
 function openFoto(name, link) {
   openPopup(cardFoto);
   popupCardImage.src = link;
   popupCardTitle.textContent = name;
+  popupCardImage.alt = name;
 }
 cardCloseButton.addEventListener("click", function () {
   closePopup(cardFoto);
