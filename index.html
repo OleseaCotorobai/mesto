@@ -48,7 +48,7 @@
             type="button"
           ></button>
           <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
-          <form class="popup__form popup__form-edit-profile" action="#" name="popup-form">
+          <form class="popup__form popup__form-edit-profile" action="#" name="popup-form" novalidate>
             <input
               class="popup__text"
               type="text"
@@ -57,7 +57,10 @@
               value="Жак-Ив Кусто"
               required
               id="name-input"
+              minlength="2"
+              maxlength="40"
             />
+            <span class="error"></span>
 
             <input
               class="popup__text"
@@ -67,6 +70,8 @@
               value="Исследователь океана"
               required
               id="job-input"
+              minlength="2"
+              maxlength="200"
             />
 
             <button
@@ -136,6 +141,7 @@
         
       </div>
     </template>
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/card.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
