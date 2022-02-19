@@ -50,7 +50,7 @@
           <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
           <form class="popup__form popup__form-edit-profile" action="#" name="popup-form" novalidate>
             <input
-              class="popup__text"
+              class="popup__text popup__text_name"
               type="text"
               placeholder="Имя"
               name="name"
@@ -60,10 +60,10 @@
               minlength="2"
               maxlength="40"
             />
-            <span class="error"></span>
+            <span class="popup__text-error" id="name-input-error"></span>
 
             <input
-              class="popup__text"
+              class="popup__text popup__text_job"
               type="text"
               placeholder="Описание"
               name="description"
@@ -73,7 +73,7 @@
               minlength="2"
               maxlength="200"
             />
-
+            <span class="popup__text-error" id="job-input-error"></span>
             <button
               type="submit"
               class="popup__submit-button"
@@ -93,9 +93,9 @@
             id="close-button"
           ></button>
           <h3 class="popup__title">Новое место</h3>
-          <form class="popup__form popup__form-add-card" action="#" name="popup-form">
+          <form class="popup__form popup__form-add-card" action="#" name="popup-form" novalidate>
             <input
-              class="popup__text"
+              class="popup__text popup__text_name"
               type="text"
               placeholder="Название"
               name="name"
@@ -104,14 +104,14 @@
             />
 
             <input
-              class="popup__text"
-              type="text"
+              class="popup__text popup__text_link"
+              type="url"
               placeholder="Ссылка на картинку"
               name="description"
               required
               id="link-input"
             />
-
+            <span class="popup__text-error" id="link-input-error"></span>
             <button
               type="submit"
               class="popup__submit-button"

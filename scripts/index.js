@@ -2,7 +2,7 @@ const buttonProfileEdit = document.querySelector(".profile__edit-button");
 const buttonCloseEditProfile = document.querySelector(
   ".popup__close-edit-button"
 );
-const popupActiveClass = "popup_opened";
+const popupActiveClass = "popup_opened"
 const formProfileEdit = document.querySelector(".popup__form-edit-profile");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
@@ -139,4 +139,20 @@ function openFoto(name, link) {
 }
 cardCloseButton.addEventListener("click", function () {
   closePopup(cardFoto);
+});
+
+function closeEsc(evt) {
+  if(evt.key === 'Escape'){
+    closePopup(document.querySelector('.popup_opened'));
+    }
+    
+}
+document.addEventListener("keydown", closeEsc);
+
+popup.forEach((popup) => {                                      
+  popup.addEventListener('click', (evt) => {
+    if( (evt.target.classList.contains('popup_opened')) || (evt.target.classList.contains('.popup__close-edit-button')) ) {
+      closePopup(popup);
+    }
+  });
 });
