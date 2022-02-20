@@ -9,7 +9,6 @@ const profileDescription = document.querySelector(".profile__description");
 const formNameInput = formProfileEdit.querySelector("#name-input");
 const formDescriptionInput = formProfileEdit.querySelector("#job-input");
 const popupAddCard = document.querySelector(".popup__form-add-card");
-const popup = document.querySelector(".popup");
 const popupAdd = document.querySelector(".popup_card");
 const buttonCardEdit = document.querySelector(".profile__add-button");
 const formTitleInput = popupAdd.querySelector("#title-input");
@@ -38,6 +37,7 @@ function openPopup(popup) {
 ///функция закрытия
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
+  document.removeEventListener("keydown", closeEsc);
 }
 
 ///Форма редактировать профиль//

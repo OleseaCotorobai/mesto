@@ -20,6 +20,7 @@ const formsValidationConfig = {
     });
   }
   
+  
   function handleField(form, input, config) {
     if (input.validity.valid) {
       hideError(form, input, config);
