@@ -48,7 +48,7 @@
             type="button"
           ></button>
           <h3 class="popup__title">Редактировать&nbsp;профиль</h3>
-          <form class="popup__form popup__form-edit-profile" action="#" name="popup-form" novalidate>
+          <form class="popup__form popup__form-edit-profile" action="#" name="popup-edit" novalidate>
             <input
               class="popup__text popup__text_name"
               type="text"
@@ -93,15 +93,18 @@
             id="close-button"
           ></button>
           <h3 class="popup__title">Новое место</h3>
-          <form class="popup__form popup__form-add-card" action="#" name="popup-form" novalidate>
+          <form class="popup__form popup__form-add-card" action="#" name="popup-add" novalidate>
             <input
               class="popup__text popup__text_name"
               type="text"
               placeholder="Название"
               name="name"
               required
+              maxlength="30"
+              minlength="2"
               id="title-input"
             />
+            <span class="popup__text-error" id="title-input-error"></span>
 
             <input
               class="popup__text popup__text_link"
